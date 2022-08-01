@@ -1,0 +1,57 @@
+body{
+  box-sizing: border-box;
+  margin: 100px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: #fbec5d;
+}
+
+.card {
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  padding: 30px;
+
+  background-color: #260701;
+
+  border: 5px solid #2f0e07;
+  border-radius: 3px;
+  
+  outline: 5px solid #38160d;
+  
+  box-shadow:
+      0 0 0 10px #411d13,
+      0 0 0 15px #4a2419;
+
+  transition: all .60s ease-in-out;
+
+}
+
+.card:hover {
+  background-color: #522500;
+}
+
+.avatar {
+  width: 40%;
+}
+
+h3 {
+  cursor: pointer;
+  transition: all .60s ease-in-out;
+  animation: myfirst 5s linear 2s infinite alternate;
+}
+
+@keyframes myfirst {
+  0%   {background-color: #6a040f; left:0px; top:0px;}
+  25%  {background-color: #0039ff; left:200px; top:0px;}
+  50%  {background-color:#d00000; left:200px; top:200px;}
+  75%  {background-color: #59d102; left:0px; top:200px;}
+  100% {background-color:  #ff8000; left:0px; top:0px;}
+}
+
+h3:hover {
+  color: #2e1803;
+}
+
